@@ -1,6 +1,6 @@
 ---
-title: About Hugo XMin
-author: Yihui Xie
+title: About
+author: Jade
 ---
 
-Another test. Does this one push?
+I am developing a predictive model for the 2024 election. Check out the blog posts (a new one will drop each Monday)!
