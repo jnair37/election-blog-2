@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Week 1 | A minimal Hugo website</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">Home</a></li>
+      
+      <li><a href="/about/">About</a></li>
+      
+      <li><a href="/categories/">Categories</a></li>
+      
+      <li><a href="/tags/">Tags</a></li>
+      
+      <li><a href="/index.xml">Subscribe</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">Week 1</span></h1>
+<h2 class="author">Jade Nair</h2>
+<h2 class="date">2024/09/09</h2>
+</div>
+
+<main>
+<p>Guiding Questions
+This week, we set out to answer two key questions about presidential elections in the United States.</p>
+<ol>
+<li>How competitive are presidential elections in the United States?</li>
+<li>Which states vote blue/red and how consistently?
+There are many ways to approach these questions, especially with predictive ends in mind. Is it possible to gather enough data points about a state to accurately understand the likelihood of its individual outcome in the upcoming election?
+Analysis &amp; Visualization
+In lab this week, we explored popular vote data and electoral college data in order to understand these concepts.
+To understand the first question, the competitiveness of presidential elections, one of the most common auxiliary questions could be how close elections are. We can look into this by examining the two-party popular vote share of each candidate, in which the closest election would have 50% for each candidate. The following graph we created in lab can represent the competitiveness of elections over time:
+This suggests broadly that elections in recent years have been closer, and likely more competitive as a result, while previous elections had very large margins of victory, even if they alternated each term.
+Other measures of competitiveness, which could be implemented in the future, include advertising dollars spent on campaigning, or other measures of the intensity of campaigns. In addition, an aspect of competitiveness that this graph does not consider is the number of candidates; although United States elections frequently have two truly viable candidates, primary competitiveness could be another interesting variable to analyze. (for example, the 2024 Democratic presidential primary was less competitive, while 2016 was very competitive - analyzing data points like this across a large number of past elections could be interesting.)
+To answer the second question, using electoral map data could help understand which states vote blue and red and how frequently. The following visualization we created in lab represents these numbers for the popular vote in each state in the most recent presidential election in 2020:</li>
+</ol>
+<p>To create a finalized electoral prediction, I followed the example set in the lab for an electoral vote prediction, based on ¾ of the previous vote share added to ¼ of the vote share from two elections back, and then graph the prediction across states using a color scale to suggest a predicted margin of victory.</p>
+<p>This method of prediction resulted in 276 votes for the Democratic Party and 262 for the Republican Party. However, this is just one way to create a prediction based on the datasets at hand.
+An alternative method would be to use even more past data, so I tried implementing other formulas that used the three most recent elections (0.5<em>prev + 0.25</em>lag1 + 0.25<em>lag2) and (0.33</em>prev + 0.33<em>lag1 + 0.33</em>lag2), where prev is the 2020 stat, lag1 is the 2016 stat and lag2 is the 2012 stat. However, I found that these actually had quite similar results to the original model, and while the margins changed a little, the overall electoral prediction didn’t actually change.
+Extensions
+I followed the first suggested extension, which involved adding state abbreviations to the map and setting ggplot themes (I used the classic theme for the first graph and stuck with the void theme for the second two due to the prevalence of axes in the other themes). I also experimented with the predictive formula as discussed above.</p>
+
+</main>
+
+  <footer>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+<script src="//cdn.jsdelivr.net/combine/npm/katex/dist/katex.min.js,npm/katex/dist/contrib/auto-render.min.js,npm/@xiee/utils/js/render-katex.js" defer></script>
+
+<script src="//cdn.jsdelivr.net/npm/@xiee/utils/js/center-img.min.js" defer></script>
+
+  
+  <hr/>
+  © <a href="https://yihui.org">Yihui Xie</a> 2017 &ndash; 2024 | <a href="https://github.com/yihui">Github</a> | <a href="https://twitter.com/xieyihui">Twitter</a>
+  
+  </footer>
+  </body>
+</html>
+

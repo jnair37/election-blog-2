@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Week1 on A minimal Hugo website</title>
+    <link>https://example.org/tags/week1/</link>
+    <description>Recent content in Week1 on A minimal Hugo website</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 09 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://example.org/tags/week1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Week 1</title>
+      <link>https://example.org/post/2024/09/09/week-1/</link>
+      <pubDate>Mon, 09 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://example.org/post/2024/09/09/week-1/</guid>
+      <description>&lt;p&gt;Guiding Questions&#xA;This week, we set out to answer two key questions about presidential elections in the United States.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;How competitive are presidential elections in the United States?&lt;/li&gt;&#xA;&lt;li&gt;Which states vote blue/red and how consistently?&#xA;There are many ways to approach these questions, especially with predictive ends in mind. Is it possible to gather enough data points about a state to accurately understand the likelihood of its individual outcome in the upcoming election?&#xA;Analysis &amp;amp; Visualization&#xA;In lab this week, we explored popular vote data and electoral college data in order to understand these concepts.&#xA;To understand the first question, the competitiveness of presidential elections, one of the most common auxiliary questions could be how close elections are. We can look into this by examining the two-party popular vote share of each candidate, in which the closest election would have 50% for each candidate. The following graph we created in lab can represent the competitiveness of elections over time:&#xA;This suggests broadly that elections in recent years have been closer, and likely more competitive as a result, while previous elections had very large margins of victory, even if they alternated each term.&#xA;Other measures of competitiveness, which could be implemented in the future, include advertising dollars spent on campaigning, or other measures of the intensity of campaigns. In addition, an aspect of competitiveness that this graph does not consider is the number of candidates; although United States elections frequently have two truly viable candidates, primary competitiveness could be another interesting variable to analyze. (for example, the 2024 Democratic presidential primary was less competitive, while 2016 was very competitive - analyzing data points like this across a large number of past elections could be interesting.)&#xA;To answer the second question, using electoral map data could help understand which states vote blue and red and how frequently. The following visualization we created in lab represents these numbers for the popular vote in each state in the most recent presidential election in 2020:&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;To create a finalized electoral prediction, I followed the example set in the lab for an electoral vote prediction, based on ¾ of the previous vote share added to ¼ of the vote share from two elections back, and then graph the prediction across states using a color scale to suggest a predicted margin of victory.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
