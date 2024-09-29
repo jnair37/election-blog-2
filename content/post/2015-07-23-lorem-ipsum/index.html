@@ -1,39 +1,14 @@
-<!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Week 2 | A minimal Hugo website</title>
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/fonts.css" />
-    
-  </head>
+---
+title: Week 2
+date: '2024-09-16'
+categories:
+  - blog-posts
+tags:
+  - Week2
+---
 
-  <body>
-    <nav>
-    <ul class="menu">
-      
-      <li><a href="/">Home</a></li>
-      
-      <li><a href="/about/">About</a></li>
-      
-      <li><a href="/categories/">Categories</a></li>
-      
-      <li><a href="/tags/">Tags</a></li>
-      
-      <li><a href="/index.xml">Subscribe</a></li>
-      
-    </ul>
-    <hr/>
-    </nav>
 
-<div class="article-meta">
-<h1><span class="title">Week 2</span></h1>
 
-<h2 class="date">2024/09/16</h2>
-</div>
-
-<main>
 <p>Although last week’s debate drew many viewers and much online discussion, some wondered
 how much effect it would really have on the outcome of the 2024 election. After all, some
 longstanding theories suggest that a candidate’s campaign strategy, debate performance, and
@@ -59,33 +34,64 @@ outlier.
 The following scatter plots graph these two economic measures against the incumbent party’s
 popular vote share.
 Including 2020:
-<img src="%22imgs%5CB2I1.png%22" alt="GDP"></p>
-<p><img src="imgs/B2I2.png" alt="GDP"></p>
-<p>Excluding 2020:
-Using linear regressions, I created lines of best fit as follows for the 2020-excluded datasets:
-Although they both appear positively correlated, the statistics ended up having different
+<img src="imgs/B2I1.png" alt="GDP" /></p>
+<div class="float">
+<img src="imgs/B2I2.png" alt="RDI" />
+<div class="figcaption">RDI</div>
+</div>
+<p>Excluding 2020:</p>
+<div class="float">
+<img src="imgs/B2I3.png" alt="GDP" />
+<div class="figcaption">GDP</div>
+</div>
+<div class="float">
+<img src="imgs/B2I4.png" alt="RDI" />
+<div class="figcaption">RDI</div>
+</div>
+<p>Using linear regressions, I created lines of best fit as follows for the 2020-excluded datasets:</p>
+<div class="float">
+<img src="imgs/B2I5.png" alt="GDP" />
+<div class="figcaption">GDP</div>
+</div>
+<div class="float">
+<img src="imgs/B2I6.png" alt="RDI" />
+<div class="figcaption">RDI</div>
+</div>
+<p>Although they both appear positively correlated, the statistics ended up having different
 significance values. Focusing only on the 2020-excluded values, here are some of the statistics
-for GDP and RDI (all when compared to popular vote share):
-Slope
-Coefficient
-Correlation R squared P value
-GDP 0.7366 0.569918 0.3248066 0.0135
+for GDP and RDI (all when compared to popular vote share):</p>
+<p>GDP: Coef 0.7366 Cor 0.569918 R^2 0.3248066 P 0.0135
 (significant!)
-RDI 0.4604 0.3338966 0.1114869 0.176 (not!)
-Based on these numbers, it’s clear that GDP is a more significant or substantive predictor of
+RDI: Coef 0.4604 Cor 0.3338966 R^2 0.1114869 P 0.176 (not!)</p>
+<p>Based on these numbers, it’s clear that GDP is a more significant or substantive predictor of
 popular vote election results. However, I wondered if using both variables together could be an
 even better predictor.
 As a result, I also created a combined multivariate linear regression between these two
 variables, which had interesting results.
 Coefficients:
 Estimate Std. Error t value Pr(&gt;|t|)
-(Intercept) 49.40880 1.75347 28.178 2.1e-14 ***
+(Intercept) 49.40880 1.75347 28.178 2.1e-14 **<em>
 RDPI_growth_quarterly -0.01269 0.36442 -0.035 0.9727
-GDP_growth_quarterly 0.74367 0.34155 2.177 0.0458 *
+GDP_growth_quarterly 0.74367 0.34155 2.177 0.0458 </em>
 When controlling for GDP, the coefficient for RDI was actually negative!
 I also plotted in-sample error for each of the three models (GDP, RDI, Both), in both line charts
-and histograms, as shown:
-The histograms suggest that using GDP alone appears to create the most accurate predictions,
+and histograms, as shown:</p>
+<div class="float">
+<img src="imgs/B2I7.png" alt="GDP" />
+<div class="figcaption">GDP</div>
+</div>
+<div class="float">
+<img src="imgs/B2I8.png" alt="RDI" />
+<div class="figcaption">RDI</div>
+</div>
+<div class="float">
+<img src="imgs/B2I9.png" alt="Both" />
+<div class="figcaption">Both</div>
+</div>
+<p><img src="imgs/B2I10.png" alt="GDP" />
+<img src="imgs/B2I11.png" alt="RDI" />
+<img src="imgs/B2I12.png" alt="Both" /></p>
+<p>The histograms suggest that using GDP alone appears to create the most accurate predictions,
 so the final prediction for 2024 will also be based on that model:
 The model predicts that the incumbent party (the Democrats) will receive 51.58486% of the
 popular vote in the 2024 presidential election.
@@ -95,20 +101,3 @@ especially the year 2020. There are many other reasons that 2024 could be an out
 stepping down and Harris stepping in last-minute; the outlier-filled candidacy of Trump; the road
 to economic recovery from COVID) and thus the usual economic models may not work as well
 for it as they have for past elections.</p>
-
-</main>
-
-  <footer>
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
-<script src="//cdn.jsdelivr.net/combine/npm/katex/dist/katex.min.js,npm/katex/dist/contrib/auto-render.min.js,npm/@xiee/utils/js/render-katex.js" defer></script>
-
-<script src="//cdn.jsdelivr.net/npm/@xiee/utils/js/center-img.min.js" defer></script>
-
-  
-  <hr/>
-  © <a href="https://yihui.org">Yihui Xie</a> 2017 &ndash; 2024 | <a href="https://github.com/yihui">Github</a> | <a href="https://twitter.com/xieyihui">Twitter</a>
-  
-  </footer>
-  </body>
-</html>
-

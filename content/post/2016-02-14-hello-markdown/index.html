@@ -1,39 +1,12 @@
-<!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Week 1 | A minimal Hugo website</title>
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/fonts.css" />
-    
-  </head>
-
-  <body>
-    <nav>
-    <ul class="menu">
-      
-      <li><a href="/">Home</a></li>
-      
-      <li><a href="/about/">About</a></li>
-      
-      <li><a href="/categories/">Categories</a></li>
-      
-      <li><a href="/tags/">Tags</a></li>
-      
-      <li><a href="/index.xml">Subscribe</a></li>
-      
-    </ul>
-    <hr/>
-    </nav>
-
-<div class="article-meta">
-<h1><span class="title">Week 1</span></h1>
-<h2 class="author">Jade Nair</h2>
-<h2 class="date">2024/09/09</h2>
-</div>
-
-<main>
+---
+title: Week 1
+author: Jade Nair
+date: '2024-09-09'
+categories:
+  - blog-posts
+tags:
+  - Week1
+---
 
 
 
@@ -65,20 +38,3 @@ To answer the second question, using electoral map data could help understand wh
 <p>An alternative method would be to use even more past data, so I tried implementing other formulas that used the three most recent elections (0.5<em>prev + 0.25</em>lag1 + 0.25<em>lag2) and (0.33</em>prev + 0.33<em>lag1 + 0.33</em>lag2), where prev is the 2020 stat, lag1 is the 2016 stat and lag2 is the 2012 stat. However, I found that these actually had quite similar results to the original model, and while the margins changed a little, the overall electoral prediction didn’t actually change.</p>
 <p>Extensions
 I followed the first suggested extension, which involved adding state abbreviations to the map and setting ggplot themes (I used the classic theme for the first graph and stuck with the void theme for the second two due to the prevalence of axes in the other themes). I also experimented with the predictive formula as discussed above.</p>
-
-</main>
-
-  <footer>
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
-<script src="//cdn.jsdelivr.net/combine/npm/katex/dist/katex.min.js,npm/katex/dist/contrib/auto-render.min.js,npm/@xiee/utils/js/render-katex.js" defer></script>
-
-<script src="//cdn.jsdelivr.net/npm/@xiee/utils/js/center-img.min.js" defer></script>
-
-  
-  <hr/>
-  © <a href="https://yihui.org">Yihui Xie</a> 2017 &ndash; 2024 | <a href="https://github.com/yihui">Github</a> | <a href="https://twitter.com/xieyihui">Twitter</a>
-  
-  </footer>
-  </body>
-</html>
-

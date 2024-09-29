@@ -32,17 +32,31 @@ outlier.
 The following scatter plots graph these two economic measures against the incumbent party’s
 popular vote share.
 Including 2020:
+![GDP](imgs/B2I1.png) 
+
+![RDI](imgs/B2I2.png)
+
 Excluding 2020:
+
+![GDP](imgs/B2I3.png) 
+
+![RDI](imgs/B2I4.png)
+
 Using linear regressions, I created lines of best fit as follows for the 2020-excluded datasets:
+
+![GDP](imgs/B2I5.png) 
+
+![RDI](imgs/B2I6.png)
+
 Although they both appear positively correlated, the statistics ended up having different
 significance values. Focusing only on the 2020-excluded values, here are some of the statistics
 for GDP and RDI (all when compared to popular vote share):
-Slope
-Coefficient
-Correlation R squared P value
-GDP 0.7366 0.569918 0.3248066 0.0135
+
+GDP: Coef 0.7366 Cor 0.569918 R^2 0.3248066 P 0.0135
 (significant!)
-RDI 0.4604 0.3338966 0.1114869 0.176 (not!)
+RDI: Coef 0.4604 Cor 0.3338966 R^2 0.1114869 P 0.176 (not!)
+
+
 Based on these numbers, it’s clear that GDP is a more significant or substantive predictor of
 popular vote election results. However, I wondered if using both variables together could be an
 even better predictor.
@@ -56,6 +70,19 @@ GDP_growth_quarterly 0.74367 0.34155 2.177 0.0458 *
 When controlling for GDP, the coefficient for RDI was actually negative!
 I also plotted in-sample error for each of the three models (GDP, RDI, Both), in both line charts
 and histograms, as shown:
+
+
+![GDP](imgs/B2I7.png)
+
+![RDI](imgs/B2I8.png)
+
+![Both](imgs/B2I9.png)
+
+![GDP](imgs/B2I10.png)
+![RDI](imgs/B2I11.png)
+![Both](imgs/B2I12.png)
+
+
 The histograms suggest that using GDP alone appears to create the most accurate predictions,
 so the final prediction for 2024 will also be based on that model:
 The model predicts that the incumbent party (the Democrats) will receive 51.58486% of the

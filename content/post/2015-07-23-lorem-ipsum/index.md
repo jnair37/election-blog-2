@@ -1,40 +1,13 @@
-<!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Week 2 | A minimal Hugo website</title>
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/fonts.css" />
-    
-  </head>
+---
+title: Week 2
+date: '2024-09-16'
+categories:
+  - blog-posts
+tags:
+  - Week2
+---
 
-  <body>
-    <nav>
-    <ul class="menu">
-      
-      <li><a href="/">Home</a></li>
-      
-      <li><a href="/about/">About</a></li>
-      
-      <li><a href="/categories/">Categories</a></li>
-      
-      <li><a href="/tags/">Tags</a></li>
-      
-      <li><a href="/index.xml">Subscribe</a></li>
-      
-    </ul>
-    <hr/>
-    </nav>
-
-<div class="article-meta">
-<h1><span class="title">Week 2</span></h1>
-
-<h2 class="date">2024/09/16</h2>
-</div>
-
-<main>
-<p>Although last week’s debate drew many viewers and much online discussion, some wondered
+Although last week’s debate drew many viewers and much online discussion, some wondered
 how much effect it would really have on the outcome of the 2024 election. After all, some
 longstanding theories suggest that a candidate’s campaign strategy, debate performance, and
 other actions all fall short to economic variables in the task of prediction. After all, if a voter isn’t
@@ -59,9 +32,11 @@ outlier.
 The following scatter plots graph these two economic measures against the incumbent party’s
 popular vote share.
 Including 2020:
-<img src="%22imgs%5CB2I1.png%22" alt="GDP"></p>
-<p><img src="imgs/B2I2.png" alt="GDP"></p>
-<p>Excluding 2020:
+![GDP]("imgs\B2I1.png") 
+
+![GDP](imgs/B2I2.png)
+
+Excluding 2020:
 Using linear regressions, I created lines of best fit as follows for the 2020-excluded datasets:
 Although they both appear positively correlated, the statistics ended up having different
 significance values. Focusing only on the 2020-excluded values, here are some of the statistics
@@ -78,7 +53,7 @@ even better predictor.
 As a result, I also created a combined multivariate linear regression between these two
 variables, which had interesting results.
 Coefficients:
-Estimate Std. Error t value Pr(&gt;|t|)
+Estimate Std. Error t value Pr(>|t|)
 (Intercept) 49.40880 1.75347 28.178 2.1e-14 ***
 RDPI_growth_quarterly -0.01269 0.36442 -0.035 0.9727
 GDP_growth_quarterly 0.74367 0.34155 2.177 0.0458 *
@@ -94,21 +69,4 @@ using economic situations alone does not create a perfect model; there are vario
 especially the year 2020. There are many other reasons that 2024 could be an outlier (Biden
 stepping down and Harris stepping in last-minute; the outlier-filled candidacy of Trump; the road
 to economic recovery from COVID) and thus the usual economic models may not work as well
-for it as they have for past elections.</p>
-
-</main>
-
-  <footer>
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
-<script src="//cdn.jsdelivr.net/combine/npm/katex/dist/katex.min.js,npm/katex/dist/contrib/auto-render.min.js,npm/@xiee/utils/js/render-katex.js" defer></script>
-
-<script src="//cdn.jsdelivr.net/npm/@xiee/utils/js/center-img.min.js" defer></script>
-
-  
-  <hr/>
-  © <a href="https://yihui.org">Yihui Xie</a> 2017 &ndash; 2024 | <a href="https://github.com/yihui">Github</a> | <a href="https://twitter.com/xieyihui">Twitter</a>
-  
-  </footer>
-  </body>
-</html>
-
+for it as they have for past elections.
