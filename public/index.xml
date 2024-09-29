@@ -6,8 +6,15 @@
     <description>Recent content in Home on A minimal Hugo website</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 23 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Sep 2024 21:13:14 -0500</lastBuildDate>
     <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Welcome</title>
+      <link>https://example.org/post/2024/09/27/welcome/</link>
+      <pubDate>Fri, 27 Sep 2024 21:13:14 -0500</pubDate>
+      <guid>https://example.org/post/2024/09/27/welcome/</guid>
+      <description>&lt;div id=&#34;election-analytics-blog-2024&#34; class=&#34;section level1&#34;&gt;&#xD;&#xA;&lt;h1&gt;Election Analytics Blog 2024&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;Hi! Welcome to my blog. I’m Jade and I’m part of the Election Analytics course at Harvard, where we are learning how to use data science to build predictive models and analyze the factors that drive elections. Follow along to see my predictions and models for each week leading up to the 2024 election!&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Week 3</title>
       <link>https://example.org/post/2024/09/23/week-3/</link>
