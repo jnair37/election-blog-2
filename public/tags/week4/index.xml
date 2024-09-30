@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Week4 on A minimal Hugo website</title>
+    <link>https://example.org/tags/week4/</link>
+    <description>Recent content in Week4 on A minimal Hugo website</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 30 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://example.org/tags/week4/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Week 4</title>
+      <link>https://example.org/post/2024/09/30/week-4/</link>
+      <pubDate>Mon, 30 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://example.org/post/2024/09/30/week-4/</guid>
+      <description>&lt;p&gt;Incumbency can be an important factor in the results of an election. Incumbents may enjoy such advantages as easy name recognition, ability to take credit for the country’s usual steady economic growth, and even the ability to allocate more federal funding to certain states. These advantages seem to lead to 7 out of 11 incumbent presidents winning since 1948. However, much of this advantage extends only to incumbent presidents, not to their parties – when considering all incumbent parties running for re-election, the statistic falls to 9 out of 19 wins since 1948, which chalks it up to a coin flip.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
