@@ -1,40 +1,13 @@
-<!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Week 3 | A minimal Hugo website</title>
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/fonts.css" />
-    
-  </head>
+---
+title: Week 3
+date: '2024-09-23'
+categories:
+  - blog-posts
+tags:
+  - Week3
+---
 
-  <body>
-    <nav>
-    <ul class="menu">
-      
-      <li><a href="/">Home</a></li>
-      
-      <li><a href="/about/">About</a></li>
-      
-      <li><a href="/categories/">Categories</a></li>
-      
-      <li><a href="/tags/">Tags</a></li>
-      
-      <li><a href="/index.xml">Subscribe</a></li>
-      
-    </ul>
-    <hr/>
-    </nav>
-
-<div class="article-meta">
-<h1><span class="title">Week 3</span></h1>
-
-<h2 class="date">2024/09/23</h2>
-</div>
-
-<main>
-<p>So far, we’ve been looking at predictions using data about previous elections, relative to basic
+So far, we’ve been looking at predictions using data about previous elections, relative to basic
 factors (incumbency, party) as well as to measures of economic well-being. However, we have a
 much more recent dataset into which we have not yet tapped: the thousands of public opinion
 polls that are conducted each year. Through the principles of sampling, polls appear to be
@@ -45,9 +18,11 @@ predicted the wrong winner.
 This leads us to explore the week’s guiding question: How can we best use polls to predict
 election outcomes?
 To understand the polls’ behavior so far in the 2024 cycle, I visualized the variation over time
-and against key events:</p>
-<p><img src="imgs/B3I1.png" alt="Variation"></p>
-<p>First, I added key events in 2024 to help understand the poll variation we’ve seen so far this
+and against key events:
+
+![Variation](imgs/B3I1.png)
+
+First, I added key events in 2024 to help understand the poll variation we’ve seen so far this
 year. In context of the timings, the major jump in Democratic approval in this graph is explained
 by Biden’s exit from the race on July 21st and subsequent handoff to Vice President Harris.
 Both parties’ approval rates have most recently been increasing, which could potentially be
@@ -71,26 +46,11 @@ created an ordinary least squares model to achieve this for 2020. I converted th
 to a numeric scale, so that I could perform a linear regression on the poll grades. This found a
 correlation between poll grades and error, as visualized below (1 = best; 10 = worst), but FTE
 has since changed its grading system from a letter grade to a different numeric scale; therefore,
-I couldn&rsquo;t reapply this model to 2024 data accurately.
+I couldn't reapply this model to 2024 data accurately.
 If I could establish a direct conversion rate between the old and new FTE scales, I would be
-able to use this scale to convert the 2020 correlation data to a 2024 prediction data.</p>
-<p><img src="imgs/B3I2.png" alt="Error vs. FTE Grade"></p>
-<p>In the future, I would see if I could find the conversion scale so that I could actually use this to
-create an updated 2024 prediction model!</p>
+able to use this scale to convert the 2020 correlation data to a 2024 prediction data.
 
-</main>
+![Error vs. FTE Grade](imgs/B3I2.png)
 
-  <footer>
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
-<script src="//cdn.jsdelivr.net/combine/npm/katex/dist/katex.min.js,npm/katex/dist/contrib/auto-render.min.js,npm/@xiee/utils/js/render-katex.js" defer></script>
-
-<script src="//cdn.jsdelivr.net/npm/@xiee/utils/js/center-img.min.js" defer></script>
-
-  
-  <hr/>
-  © <a href="https://yihui.org">Yihui Xie</a> 2017 &ndash; 2024 | <a href="https://github.com/yihui">Github</a> | <a href="https://twitter.com/xieyihui">Twitter</a>
-  
-  </footer>
-  </body>
-</html>
-
+In the future, I would see if I could find the conversion scale so that I could actually use this to
+create an updated 2024 prediction model!
