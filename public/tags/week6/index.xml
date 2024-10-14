@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Week6 on A minimal Hugo website</title>
+    <link>https://example.org/tags/week6/</link>
+    <description>Recent content in Week6 on A minimal Hugo website</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 14 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://example.org/tags/week6/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Week 6</title>
+      <link>https://example.org/post/2024/10/14/week-6/</link>
+      <pubDate>Mon, 14 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://example.org/post/2024/10/14/week-6/</guid>
+      <description>&lt;p&gt;Week 6: The “Air War”&lt;/p&gt;&#xD;&#xA;&lt;p&gt;Advertising is a powerful tool to get messages across in many facets of society, but some of the industry’s most groundbreaking cultural moments (see: LBJ’s 1964 “Daisy” ad) have been presidential campaigns. Ad spots are perceived as such an effective way of messaging that campaigns regularly spend millions of dollars on them. Today, the “air war” not only focuses on airing television ads, but increasingly features airtime on social media. This election cycle has seen plenty of examples of candidates keeping up with the modernization of marketing, most notably the flurry of memes and cultural interweaving that propelled the Harris campaign in its initial days this July.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
