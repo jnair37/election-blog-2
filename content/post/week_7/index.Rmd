@@ -30,12 +30,18 @@ Next, fitting GLM models to a dataset of poll vs. final election results leads t
 
 I repeated this process for each of the other six swing states:
 
-![Michigan](imgs/michigan_simulations.png)
-![Wisconsin](imgs/wisconsin_simulations.png)
-![Nevada](imgs/nevada_simulations.png)
-![Arizona](imgs/arizona_simulations.png)
-![Georgia](imgs/georgia_simulations.png)
-![North Carolina](imgs/nc_simulations.png)
+![Michigan](imgs/michigan_simulations.png) 
+Michigan
+![Wisconsin](imgs/wisconsin_simulations.png) 
+Wisconsin
+![Nevada](imgs/nevada_simulations.png) 
+Nevada
+![Arizona](imgs/arizona_simulations.png) 
+Arizona
+![Georgia](imgs/georgia_simulations.png) 
+Georgia
+![North Carolina](imgs/nc_simulations.png) 
+North Carolina
 
 These simulations suggest that out of the seven, the Democrats have the advantage in Michigan, Wisconsin, and Pennsylvania, but the Republicans have it in the other four. This leads to a much closer new electoral prediction of 270 votes for Democrats to 268 for Republicans. The closeness here seems to further support that the popular vote will be extremely close as well, so I don't see a reason this electoral prediction should change my previous popular vote prediction of 50.89% for Harris and 47.95% for Trump.
 
