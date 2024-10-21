@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Week7 on A minimal Hugo website</title>
+    <link>https://example.org/tags/week7/</link>
+    <description>Recent content in Week7 on A minimal Hugo website</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 21 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://example.org/tags/week7/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Week 7</title>
+      <link>https://example.org/post/2024/10/21/week-7/</link>
+      <pubDate>Mon, 21 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://example.org/post/2024/10/21/week-7/</guid>
+      <description>&lt;p&gt;Week 7: The “Ground Game”&lt;/p&gt;&#xD;&#xA;&lt;p&gt;For the first time since early August, FiveThirtyEight’s bpredicted winner for the 2024 presidential election has changed. After nearly three months of a slight lead for the Harris campaign in the site’s simulation counters, this weekend’s simulations pointed to a slightly higher likelihood for the Trump campaign, with the Republican nominee winning 52 times out of 100.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
