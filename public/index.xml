@@ -6,8 +6,15 @@
     <description>Recent content in Home on A minimal Hugo website</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 21 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 28 Oct 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Week 8</title>
+      <link>https://example.org/post/2024/10/28/week-8/</link>
+      <pubDate>Mon, 28 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://example.org/post/2024/10/28/week-8/</guid>
+      <description>&lt;p&gt;As much as economic and political fundamentals, campaign strategies, and polling can explain elections and voter behavior, it can be argued that there’s always room for an October surprise - a last-minute, unexpected turn of events that may have the influence to sway the final outcome.&lt;/p&gt;&#xD;&#xA;&lt;p&gt;Some say that the October surprise of 2024 was Trump’s controversial Madison Square Garden rally held over the weekend (&lt;a href=&#34;https://www.newsweek.com/could-puerto-rico-remarks-cost-donald-trump-election-1975938&#34; class=&#34;uri&#34;&gt;https://www.newsweek.com/could-puerto-rico-remarks-cost-donald-trump-election-1975938&lt;/a&gt;). This happened so recently that there isn’t all that much data on it yet. However, other shocks have historically impacted elections. Recent memory includes 2016, in which the “Comey letter” controversy may have tipped the scales against Hillary Clinton.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Week 7</title>
       <link>https://example.org/post/2024/10/21/week-7/</link>

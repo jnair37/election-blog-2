@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Week 8 | A minimal Hugo website</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">Home</a></li>
+      
+      <li><a href="/about/">About</a></li>
+      
+      <li><a href="/categories/">Categories</a></li>
+      
+      <li><a href="/tags/">Tags</a></li>
+      
+      <li><a href="/index.xml">Subscribe</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">Week 8</span></h1>
+
+<h2 class="date">2024/10/28</h2>
+</div>
+
+<main>
+
+
+
+<p>As much as economic and political fundamentals, campaign strategies, and polling can explain elections and voter behavior, it can be argued that there’s always room for an October surprise - a last-minute, unexpected turn of events that may have the influence to sway the final outcome.</p>
+<p>Some say that the October surprise of 2024 was Trump’s controversial Madison Square Garden rally held over the weekend (<a href="https://www.newsweek.com/could-puerto-rico-remarks-cost-donald-trump-election-1975938" class="uri">https://www.newsweek.com/could-puerto-rico-remarks-cost-donald-trump-election-1975938</a>). This happened so recently that there isn’t all that much data on it yet. However, other shocks have historically impacted elections. Recent memory includes 2016, in which the “Comey letter” controversy may have tipped the scales against Hillary Clinton.</p>
+<p>Shocks come in many forms, but we’ve seen several key types this year alone.</p>
+<p>For one, we have had a hurricane in an election year in a battleground state - Hurricane Helene in North Carolina. Some theorize that natural disasters can negatively affect attitudes towards the incumbent party, as they provide an opportunity to criticize the crisis management strategy deployed by the incumbent government.</p>
+<p>To test this theory, limiting it to hurricanes that occur in election years, I produced the following visualizations about hurricanes and incumbent party presidential vote share (using 1996-2016 data):</p>
+<div class="float">
+<img src="hurricane_votes.png" alt="Hurricane Count" />
+<div class="figcaption">Hurricane Count</div>
+</div>
+<p>This seems like it’s mainly driven by an outlier, which is coincidentally North Carolina. In an election year that it had well over 100 hurricanes, the incumbent received somewhat less than 50% of the popular vote. However, the other state-year combinations that had hurricanes display almost no clear pattern, so I’m inclined to think that this is just an outlier and shouldn’t be read into further. While the GOP has tried to play up the criticism-of-crisis-handling strategy, it may not be as effective as some think it is - voters appear to recognize in most cases that presidents can’t actually control natural disasters.</p>
+<div class="float">
+<img src="hurricane_deaths.png" alt="Hurricane Deaths" />
+<div class="figcaption">Hurricane Deaths</div>
+</div>
+<div class="float">
+<img src="hurricane_injuries.png" alt="Hurricane Injuries" />
+<div class="figcaption">Hurricane Injuries</div>
+</div>
+<p>The graphs of deaths and injuries further this claim - neither shows any significant correlation to election performance, not to mention that the data appears to be sparse and full of zeros, particularly in the injury category.</p>
+<p>Taken together, these patterns suggest either that Helene may not have the most outsize influence in North Carolina, or alternatively that the data is incomplete. It is true that no hurricane of such scale has happened during an election year as measured (the maximum for hurricane deaths in a state in the data was 25, while 98 people have died in North Carolina).</p>
+<p>It has been seen in past studies that voters have a rather short-term memory, which spurred the decision to only include recent events, but it is also possible that a different methodology would have yielded different results; for example, maybe the large-scale impact of Hurricane Katrina contributed to the Republican party’s loss three years later (although popular belief states the recession was a bigger factor).</p>
+<p>We’ve also seen a rise in protest activity of many types over the last year or two. The protest data available only begins in 2017, so I didn’t have as many examples to map to presidential election years. Instead, I made bar graphs of the number of protests by year:</p>
+<div class="float">
+<img src="all_protests.png" alt="All Protests" />
+<div class="figcaption">All Protests</div>
+</div>
+<p>Taking into consideration the 2018 midterms, the 2020 presidential election, the 2022 midterms, and the 2024 presidential election, we see the following about protests and how they could map to dissatisfaction with incumbents:
+* Generally, we see a major post-pandemic rise in protests, effectively throughout the Biden administration. This could be a result of more people being politically active ever since the pandemic.
+* Democrats flipped the House in 2018, coinciding with a slight spike in protests.
+* Democrats unseated the incumbent president was unseated and flipped the Senate in 2020, coinciding with a major rise in protests.
+* Republicans flipped the House in 2022, coinciding with a spike in protests and the greatest number of protests in a year as measured.
+* 2024 has so far been on par with the last few years in terms of numbers of protests, which is somewhat inconclusive for whether Republicans can again mount a successful challenge to the incumbent party in the White House. There has neither been a particular spike nor a downtrend, although it could be argued that more of the 2023 protests were in the latter half and constitutes something of a spike.
+* It is also possible that more protests tend to happen in election years as people feel politicians are paying attention, and this is correlated with a general tendency of change each election. This would mean protests do not actually say much about incumbent defeats, but simply have the mere existence of an election as a confounding variable.</p>
+<p>Student activism could be another important factor as turnout among young people could be a key factor in this election. I used Harvard as a proxy for college-campus protests and created the following visualization:</p>
+<div class="float">
+<img src="harv_protests.png" alt="Harvard Protests" />
+<div class="figcaption">Harvard Protests</div>
+</div>
+<p>This suggests that Harvard-related protests follow a vaguely similar pattern of spikes during election years, but have rapidly increased over the last two years. That trend suggests more political awareness among at least some subset of the student population, which could mean more political participation among the youngest brackets of voters. There has been much discussion of whether polls are skewed because young voters don’t answer their phones; this could lend some credibility to these discussions.</p>
+<p>Overall, with all the caveats of the above findings, I am not sure any of this has significant enough implications to change my predictions from week 7; for now I will stick with those and update over the next week if I find anything more significantly correlated.</p>
+
+</main>
+
+  <footer>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+<script src="//cdn.jsdelivr.net/combine/npm/katex/dist/katex.min.js,npm/katex/dist/contrib/auto-render.min.js,npm/@xiee/utils/js/render-katex.js" defer></script>
+
+<script src="//cdn.jsdelivr.net/npm/@xiee/utils/js/center-img.min.js" defer></script>
+
+  
+  <hr/>
+  © <a href="https://yihui.org">Yihui Xie</a> 2017 &ndash; 2024 | <a href="https://github.com/yihui">Github</a> | <a href="https://twitter.com/xieyihui">Twitter</a>
+  
+  </footer>
+  </body>
+</html>
+
