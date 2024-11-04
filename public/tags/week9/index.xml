@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Week9 on A minimal Hugo website</title>
+    <link>https://example.org/tags/week9/</link>
+    <description>Recent content in Week9 on A minimal Hugo website</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 04 Nov 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://example.org/tags/week9/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Final prediction</title>
+      <link>https://example.org/post/2024/11/04/final-prediction/</link>
+      <pubDate>Mon, 04 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>https://example.org/post/2024/11/04/final-prediction/</guid>
+      <description>&lt;p&gt;With the election just on the horizon, it’s time to create my final model, applying many different methodologies from throughout the semester. Here is the formula I used:&lt;/p&gt;&#xD;&#xA;&lt;p&gt;Model Formula:&lt;/p&gt;&#xD;&#xA;&lt;p&gt;(F_pred + P_pred)/2&lt;/p&gt;&#xD;&#xA;&lt;p&gt;where F_pred = ENET(“GDP”, “GDP_growth_quarterly”, “RDPI”, “RDPI_growth_quarterly”, “CPI”, “unemployment”, “sp500_close”, “pv2p_lag1”, “pv2p_lag2”, “incumbent_party”, “incumbent”, “deminc”, “prev_admin”, “juneapp” -&amp;gt; “pv2p”)&lt;/p&gt;&#xD;&#xA;&lt;p&gt;and P_pred = % WIN over 10000 simulations; simulations estimated # of likely voters for each candidate based on historical turnout + polling error&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

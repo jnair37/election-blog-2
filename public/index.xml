@@ -6,8 +6,15 @@
     <description>Recent content in Home on A minimal Hugo website</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 28 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 04 Nov 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Final prediction</title>
+      <link>https://example.org/post/2024/11/04/final-prediction/</link>
+      <pubDate>Mon, 04 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>https://example.org/post/2024/11/04/final-prediction/</guid>
+      <description>&lt;p&gt;With the election just on the horizon, it’s time to create my final model, applying many different methodologies from throughout the semester. Here is the formula I used:&lt;/p&gt;&#xD;&#xA;&lt;p&gt;Model Formula:&lt;/p&gt;&#xD;&#xA;&lt;p&gt;(F_pred + P_pred)/2&lt;/p&gt;&#xD;&#xA;&lt;p&gt;where F_pred = ENET(“GDP”, “GDP_growth_quarterly”, “RDPI”, “RDPI_growth_quarterly”, “CPI”, “unemployment”, “sp500_close”, “pv2p_lag1”, “pv2p_lag2”, “incumbent_party”, “incumbent”, “deminc”, “prev_admin”, “juneapp” -&amp;gt; “pv2p”)&lt;/p&gt;&#xD;&#xA;&lt;p&gt;and P_pred = % WIN over 10000 simulations; simulations estimated # of likely voters for each candidate based on historical turnout + polling error&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Week 8</title>
       <link>https://example.org/post/2024/10/28/week-8/</link>
@@ -20,7 +27,7 @@
       <link>https://example.org/post/2024/10/21/week-7/</link>
       <pubDate>Mon, 21 Oct 2024 00:00:00 +0000</pubDate>
       <guid>https://example.org/post/2024/10/21/week-7/</guid>
-      <description>&lt;p&gt;Week 7: The “Ground Game”&lt;/p&gt;&#xD;&#xA;&lt;p&gt;For the first time since early August, FiveThirtyEight’s bpredicted winner for the 2024 presidential election has changed. After nearly three months of a slight lead for the Harris campaign in the site’s simulation counters, this weekend’s simulations pointed to a slightly higher likelihood for the Trump campaign, with the Republican nominee winning 52 times out of 100.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Week 7: The “Ground Game”&lt;/p&gt;&#xD;&#xA;&lt;p&gt;For the first time since early August, FiveThirtyEight’s predicted winner for the 2024 presidential election has changed. After nearly three months of a slight lead for the Harris campaign in the site’s simulation counters, this weekend’s simulations pointed to a slightly higher likelihood for the Trump campaign, with the Republican nominee winning 52 times out of 100.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Week 6</title>
