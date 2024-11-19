@@ -1,0 +1,58 @@
+---
+title: Reflections
+date: '2024-11-18'
+categories:
+  - blog-posts
+tags:
+  - Week10
+---
+
+
+
+<p><strong>Post-Election Reflection</strong></p>
+<p>I was wrong.</p>
+<p>As it turns out, a lot of other people were also wrong. Famed prediction “streaks” have been broken and theories from pollsters left and right have been disproven.</p>
+<div class="float">
+<img src="bartlet_wrong.png" alt="As my favorite fictional president would say…" />
+<div class="figcaption">As my favorite fictional president would say…</div>
+</div>
+<p>Now, my task turns to understanding what went wrong with my model, and why.</p>
+<p><strong>Recap of Models and Predictions</strong></p>
+<p>I created a weighted average of a fundamentals model and a polling-based simulation. The fundamentals model included; select(“year”, “pv2p”, “GDP”, “GDP_growth_quarterly”, “RDPI”, “RDPI_growth_quarterly”, “CPI”, “unemployment”, “sp500_close”, “pv2p_lag1”, “pv2p_lag2”, “incumbent_party”, “incumbent”, “deminc”, “prev_admin”, “juneapp”)
+The polling-based model estimated voting population, turnout, and then simulated the vote share and averaged it out over a bunch of simulations.</p>
+<p>I predicted that Harris would eke out a narrow win, with 270 electoral votes. This was my predicted electoral map:</p>
+<div class="float">
+<img src="FINAL_PRED.png" alt="Prediction" />
+<div class="figcaption">Prediction</div>
+</div>
+<p>In the closest swing states, such as Pennsylvania, she was projected to win with just 51% of the vote, which was well within the margin of error, suggesting a toss-up race in each of the battleground states; even with the uncertainty, based on the incredible closeness in my model and in many others, I would have expected Harris to win at least one battleground state.</p>
+<p>However, this model proved incorrect as Trump won all seven battleground states. To figure out why it didn’t reflect this outcome, I first displayed the accuracy.</p>
+<p><strong>Accuracy Modeling</strong></p>
+<div class="float">
+<img src="error_map_final.png" alt="Error Map" />
+<div class="figcaption">Error Map</div>
+</div>
+<p>This is the state-by-state error map that I created to understand the accuracy (and inaccuracies) of my model. Blue means error in favor of the Democrats; red means error in favor of the Republicans. (Note: color scale was clipped at (-5,5) to standardize the color gradient, while some of the errors went up to 10 in states like West Virginia). The battleground states had a slight error in favor of the Democrats, which was enough to change the predicted and actual result, while other non-swing states had quite significant errors in the blue direction.</p>
+<p>The Democratic-leaning error was most significant in non-swing states, including a large number of Republican states like Texas, Florida, Mississippi, and Alabama, and some Democratic states like Rhode Island and New York. It has been mentioned, most notably in Harris’ campaign manager’s sign-off, that Harris’ campaign lessened this year’s red wave among swing-state residents, explaining why the blue error was not as high in those states.</p>
+<p><strong>Hypotheses and Preliminary Experiments</strong></p>
+<p>We know that these models followed most of the polling error on mainstream prediction outlets such as FiveThirtyEight. Across the board, predictors called the election as much closer than it was, suggesting Harris had more potential in the battleground states than it seems she had. Even fundamental models such as the Time for Change model (<a href="https://centerforpolitics.org/crystalball/time-for-change-model-predicts-close-election-with-slight-edge-for-kamala-harris/" class="uri">https://centerforpolitics.org/crystalball/time-for-change-model-predicts-close-election-with-slight-edge-for-kamala-harris/</a>) predicted a win for Harris. That model had correctly predicted every presidential election since 1988 until now.</p>
+<p>This suggests that the error with my models is not unique to my methods, but rather a symptom of a significant source of error running across all predictive methods. This typically points to some variable that is being left unconsidered or sampling error in the polls. One hypothesis I have is that there is some missing economic indicator that election predictors have not been considering and has not been important in the past, but that was important for 2024 alone.</p>
+<p>While typically you might say everything was within the margin of error and thus does not point to a systematic prediction error, there was a clear shift to the right between predicted and actual output in most states, suggesting there is a meaningful trend pushing away from the incumbent party.</p>
+<p>We must then ask: What was so different about this election such that it broke with my predictive models, as well as with nearly all mainstream economic analysis and polling? There could be a few different explanations for this. For one, all incumbent parties all over the world lost vote share in 2024, suggesting that global financial conditions incentivized voters worldwide to reject their incumbent leadership and spring for a change.</p>
+<p>With this knowledge in mind, my first step was to look purely at fundamentals. If we subscribe to the global theory that all incumbents have been blamed for impactful global economic trends, and thus they’re all losing, economic indicators should be a good predictor of presidential vote share. However, controlling for economic indicators alone did not particularly change the result.</p>
+<p>When I tried isolating fundamentals, my model still significantly overestimated the Democrats’ performance at the ballot box; therefore, using fundamentals alone would not have eliminated or particularly reduced my error. I tried whittling down to a couple smaller groups of fundamentals to see if that would increase accuracy, but it did not. I also tried removing states from the equation to see if the national error would be better, but the fundamentals still predicted Harris would win the national popular vote.</p>
+<p>The economic fundamentals I have been using are GDP, RDI/RDPI, CPI, the S&amp;P500, and unemployment. If global economic trends are harming incumbents, the fundamentals should predict a loss for the incumbent, but the fact that these don’t predict an incumbent loss would suggest that another fundamental mechanism is necessary to successfully predict future elections with incumbent influences.</p>
+<p>Of the fundamentals I used, because I was already using RDPI, I figured that sufficed to represent whether people felt they had money to spend in the face of inflation. I wasn’t sure using inflation directly would have been particularly helpful; inflation itself has decreased considerably since March (<a href="https://tradingeconomics.com/united-states/inflation-cpi" class="uri">https://tradingeconomics.com/united-states/inflation-cpi</a>). The Time-for-Change model used inflation directly and still fell similarly short of a correct prediction, which makes sense as things are improving on paper. As my logic went, whether that has trickled down to adjusted disposable personal income may provide a stronger connection to feelings about the incumbent. However, RDPI was also not sufficient to capture these negative feelings.</p>
+<p>(“year”, “pv2p”, “GDP”, “GDP_growth_quarterly”, “RDPI”, “RDPI_growth_quarterly”, “CPI”, “unemployment”, “sp500_close”, “pv2p_lag1”, “pv2p_lag2”, “incumbent_party”, “incumbent”, “deminc”, “prev_admin”, “juneapp”)
+(Variables I used for reference)</p>
+<p>This article (<a href="https://www.economist.com/finance-and-economics/2024/11/14/economists-need-new-indicators-of-economic-misery" class="uri">https://www.economist.com/finance-and-economics/2024/11/14/economists-need-new-indicators-of-economic-misery</a>) also posits that we are using the wrong indicators to determine economic health and proposes using inflation and interest rates in tandem to unlock a truly accurate economic prediction.</p>
+<p>If the first hypothesis were to prove incorrect, the other central hypothesis I have is that there could be some kind of social disconnect between material economic conditions and people’s perceptions of material economic conditions.</p>
+<p>This Pew Research survey from May 2024 suggests that people on average feel better about their own personal economic situations than the nation’s, suggesting a skew towards negative opinions on the nation’s economy despite a more positive aggregate personal economic outlook.
+<a href="https://www.pewresearch.org/politics/2024/05/23/views-of-the-nations-economy-may-2024/" class="uri">https://www.pewresearch.org/politics/2024/05/23/views-of-the-nations-economy-may-2024/</a></p>
+<p>When people generally feel like their finances are improving but have a general feeling that the nation’s are not, it suggests some kind of biased perception of national economics and politics among the public at large. This could be media-related, but the media involved doesn’t even have to be campaign advertising. News articles, television, YouTubers, podcasts, and other year-round outlets all contribute to personal perception of the nation’s economic state. If these sources skew towards pessimistic outlooks on the economy, perhaps even because negative coverage drives more engagement, it could contribute to bias in the public perception and skew the ratio of true fundamentals to vote share. It’s possible that the influence of media could help explain Trump’s overperforming predictions in 2016, 2020, and 2024, as various conservative media have grown considerably in influence throughout his three candidacies.</p>
+<p><strong>Proposals for Testing</strong></p>
+<p>A number of quantitative tests could assist in validating these hypotheses.</p>
+<p>For the first hypothesis, I would source and rigorously test a variety of other economic indicators, including but not limited to the combined inflation+interest rate proposal from the Economist article. I would do more research to understand what other factors are overlooked by election models but may have an impact on personal economic situations.</p>
+<p>For the second hypothesis, I would gather outside data on economic pessimism in United-States-based media over the last four years and compare it to data from 2008-2012 (incumbent win), 2012-2016 (incumbent party loss) and 2016-2020 (incumbent loss) if I have it. Unfortunately, there isn’t a lot of data on U.S. elections, and there is far less on those that could be influenced by modern forms of media. If it is at all possible, quantifying the way economic conditions are portrayed in the news and elsewhere could help understand if there is truly a significant perception gap driving error in fundamentals-based predictions.</p>
+<p><strong>Takeaways and Do-Overs</strong></p>
+<p>I think my major takeaway from this process is this key distinction between data and perception. Voters are not machines! They don’t process economic data to make their decision; rather, they go off intuition, anecdotal evidence, and what they see on their TV or in their feeds. If I were to do it again, I would try to focus on finding economic indicators or surveys that truly encompass what’s more important than economic performance or political effectiveness, which is perceptions of economic performance and political effectiveness. I also think the fundamentals absolutely were the main determinant of the election, as only the fundamentals were underlying to all global elections in 2024, and thus a fundamentals-based model alone (without polling) would have likely sufficed had the right fundamental variables been selected.</p>
