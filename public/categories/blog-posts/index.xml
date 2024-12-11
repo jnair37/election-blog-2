@@ -6,8 +6,15 @@
     <description>Recent content in Blog-Posts on A minimal Hugo website</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 18 Nov 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 10 Dec 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://example.org/categories/blog-posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pennsylvania Campaign Narrative</title>
+      <link>https://example.org/post/2024/12/10/pennsylvania-campaign-narrative/</link>
+      <pubDate>Tue, 10 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://example.org/post/2024/12/10/pennsylvania-campaign-narrative/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;General Overview&lt;/strong&gt;&lt;/p&gt;&#xD;&#xA;&lt;p&gt;Pennsylvania is a Mid-Atlantic state with a population of 12.96 million. 35% of Pennsylvanians hold a bachelor’s degree or higher (about even with the 36% nationwide statistic), while 33% hold only a high school diploma. The state is 81% white, and 74% white excluding Hispanic populations (indicating a significantly higher white population than the 75% and 58% nationwide numbers respectively). It is part of America’s Rust Belt, a term for the Midwestern to Mid-Atlantic region known for being a stronghold of industry and manufacturing that has been in decline since the 1950s.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Reflections</title>
       <link>https://example.org/post/2024/11/18/reflections/</link>

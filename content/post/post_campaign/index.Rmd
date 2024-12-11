@@ -1,3 +1,12 @@
+---
+title: Pennsylvania Campaign Narrative
+date: '2024-12-10'
+categories:
+  - blog-posts
+tags:
+  - Final
+---
+
 **General Overview**
 
 Pennsylvania is a Mid-Atlantic state with a population of 12.96 million. 35% of Pennsylvanians hold a bachelor’s degree or higher (about even with the 36% nationwide statistic), while 33% hold only a high school diploma. The state is 81% white, and 74% white excluding Hispanic populations (indicating a significantly higher white population than the 75% and 58% nationwide numbers respectively). It is part of America’s Rust Belt, a term for the Midwestern to Mid-Atlantic region known for being a stronghold of industry and manufacturing that has been in decline since the 1950s. 
@@ -16,10 +25,11 @@ My Pennsylvania forecast was wrong along with those of experts on the fundamenta
 2020 Map: (https://www.politicspa.com/fun-with-maps-election-night-2024/139796/)
 
 
+![](2020_map.png) 
 
 2024 Map: (https://www.politico.com/2024-election/results/pennsylvania/)
 
-
+![](2024_map.png) 
 
 **Campaign Narrative & Analysis**
 
@@ -67,7 +77,7 @@ Neither campaign particularly fits the first description – very few policies w
 
 The authors also mention that being overly inundated with political messaging decreases the effect of a given piece of messaging, suggesting that the overwhelmed Pennsylvanians in Erie County and elsewhere may have become impervious to campaign messaging altogether. These factors all decreased Harris’ ability to run a successful insurgent campaign. 
 
-Meanwhile, the Siena polls (https://www.nytimes.com/2024/11/03/us/politics/harris-trump-times-siena-poll.html) still showed the candidates neck and neck in Pennsylvania up until the end. Towards the final stretch of the campaign process, Elon Musk offered a $1 million lottery open to supporters of him and Trump who registered to vote in Pennsylvania. This was challenged but upheld in court, with the defense arguing that winners were “paid spokespeople” (https://apnews.com/article/musk-million-sweepstakes-lottery-pennsylvania-krasner-4f683c48eb7dcc57f183e54ef16e7320). The effect of this could have been to incentivize registration among Trump supporters, and with such close margins in the state, i
+Meanwhile, the Siena polls (https://www.nytimes.com/2024/11/03/us/politics/harris-trump-times-siena-poll.html) still showed the candidates neck and neck in Pennsylvania up until the end. Towards the final stretch of the campaign process, Elon Musk offered a $1 million lottery open to supporters of him and Trump who registered to vote in Pennsylvania. This was challenged but upheld in court, with the defense arguing that winners were “paid spokespeople” (https://apnews.com/article/musk-million-sweepstakes-lottery-pennsylvania-krasner-4f683c48eb7dcc57f183e54ef16e7320). The effect of this could have been to incentivize registration among Trump supporters, and with such close margins in the state.
 
 Down ballot, three-time incumbent Senator Bob Casey met a similar fate as Harris – in the closest Senate election nationwide, he was narrowly defeated by a Republican challenger. At the same time, the Democrats in Pennsylvania’s state senate succeeded at retaining their majority. One article (https://www.wesa.fm/politics-government/2024-12-06/pa-democrats-down-ballot) looks into PA state legislature Democratic successes and their differences from federal campaigns. State-legislature candidates talked about diverging on messaging and taking a stronger economic-populist stance than the federal candidates did. However, the article does mention that incumbent Senator Casey also ran on an economic populist message and still narrowly lost. If we take the state legislators’ central argument that the messaging was not economic enough, we see that it goes against Vavreck’s notion of an insurgent, non-economic campaign as necessary for the incumbent party in a bad economy. 
 
